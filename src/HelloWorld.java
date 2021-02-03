@@ -5,14 +5,20 @@ public class HelloWorld {
 
     static Scanner sc = new Scanner(System.in);
 
-    final double SHORTPI = 3.14159;
-
     public static void main(String[] args) {
 
-        System.out.println("Hello World");
+        StringBuilder sb = new StringBuilder("I'm a string builder");
+        System.out.println(sb.length());
+        System.out.println(sb.capacity());
+        sb.append(" Yeah");
+        System.out.println(sb.insert(6, "Big "));
+        System.out.println(sb.replace(6,9, "wig"));
+        System.out.println(sb.substring(6,10));
+        System.out.println(sb.delete(6,10));
+        System.out.println(sb.charAt(4));
+        System.out.println(sb.indexOf("Yeah"));
 
-        int var1 = 100;
-        int v2, v3;
+
 
 
 
