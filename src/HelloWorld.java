@@ -7,10 +7,34 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
-            ArrayList<String> aL1 = new ArrayList<String>(20);
-            aL1.add("Sue");
-            ArrayList<Integer> aL2 = new ArrayList<>(Arrays.asList(1,2,3,4));
-            for(Integer x: aL2) System.out.print(x);
+        // Array examples:
+        //ArrayList<String> aL1 = new ArrayList<String>(20);
+        //aL1.add("Sue");
+        //ArrayList<Integer> aL2 = new ArrayList<>(Arrays.asList(1,2,3,4));
+        //for(Integer x: aL2) System.out.print(x);
+        //System.out.println(aL2.get(1));
+        //aL2.set(1, 5);
+        //aL2.remove(3);
+
+        //Iterator it = aL2.iterator();
+        //while(it.hasNext()) {
+        //  System.out.println(it.next());
+
+
+        //Linked List:
+        LinkedList<Integer> iL1 = new LinkedList<Integer>();
+        iL1.add(1); iL1.add(2); iL1.add(3);
+        iL1.addAll(Arrays.asList(1,2,3,4));
+        iL1.addFirst(0);
+        System.out.println(iL1.contains(4));
+        System.out.println(iL1.indexOf(4));
+        iL1.set(0,2);
+        System.out.println(iL1.get(0));
+
+
+    }
+
+}
 
 
 
@@ -20,6 +44,21 @@ public class HelloWorld {
 
 
 
+// Array examples:
+    //ArrayList<String> aL1 = new ArrayList<String>(20);
+    //aL1.add("Sue");
+    //ArrayList<Integer> aL2 = new ArrayList<>(Arrays.asList(1,2,3,4));
+    //for(Integer x: aL2) System.out.print(x);
+    //System.out.println(aL2.get(1));
+    //aL2.set(1, 5);
+    //aL2.remove(3);
+
+    //Iterator it = aL2.iterator();
+    //while(it.hasNext()) {
+    //  System.out.println(it.next());
+
+
+    //Linked List:
 
 
        // int[] a1 = new int[10];
@@ -51,10 +90,3 @@ public class HelloWorld {
        // int a8[] = {3,2,1};
        // Arrays.sort(a8);
        // System.out.println(Arrays.toString(a8));
-
-
-
-
-
-    }
-}
